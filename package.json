@@ -4,12 +4,37 @@
 	"description": "Spec-driven workflow for pi: a spec graph with spec_* tools, a live TODO plan shown above the editor, and the writing-specs / brainstorming / shipping-a-pr workflow skills.",
 	"type": "module",
 	"license": "Apache-2.0",
-	"keywords": ["pi-package", "pi", "pi-coding-agent", "extension", "skills", "specs", "todos"],
+	"author": "Francisco José Delicado González <delicadofranvi@gmail.com>",
+	"homepage": "https://github.com/franndeli/pi-workflow-kit#readme",
+	"bugs": {
+		"url": "https://github.com/franndeli/pi-workflow-kit/issues"
+	},
+	"keywords": [
+		"pi-package",
+		"pi",
+		"pi-coding-agent",
+		"pi-extension",
+		"coding-agent",
+		"ai-agent",
+		"extension",
+		"skills",
+		"specs",
+		"spec-driven-development",
+		"todos",
+		"workflow"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/franndeli/pi-workflow-kit.git"
 	},
-	"files": ["todos", "spec-graph", "workflow", "skills", "README.md", "LICENSE"],
+	"files": [
+		"todos",
+		"spec-graph",
+		"workflow",
+		"skills",
+		"README.md",
+		"LICENSE"
+	],
 	"dependencies": {
 		"yaml": "2.9.1"
 	},
@@ -19,7 +44,13 @@
 		"typebox": "*"
 	},
 	"pi": {
-		"extensions": ["./todos/index.ts", "./spec-graph/index.ts", "./workflow/index.ts"],
-		"skills": ["./skills"]
+		"extensions": [
+			"./todos/index.ts",
+			"./spec-graph/index.ts",
+			"./workflow/index.ts"
+		],
+		"skills": [
+			"./skills"
+		]
 	}
 }

@@ -1,1 +1,4 @@
 node_modules/
+.pi/context/
+.DS_Store
+*.log

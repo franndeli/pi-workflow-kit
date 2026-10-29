@@ -1,0 +1,46 @@
+name: Bug report
+description: Something in pi-workflow-kit doesn't work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: A clear description of the bug and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run `pi` in a project with ...
+        2. Ask the agent to ...
+        3. See error ...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Spec graph (spec_* tools)
+        - TODO plan (todo_* tools / widget)
+        - Workflow skills
+        - Installation
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: pi-workflow-kit version, `pi --version`, OS
+      placeholder: pi-workflow-kit 0.1.0, pi 1.4.0, macOS 15
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      render: text
