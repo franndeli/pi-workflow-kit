@@ -1,0 +1,25 @@
+{
+	"name": "pi-workflow-kit",
+	"version": "0.1.0",
+	"description": "Spec-driven workflow for pi: a spec graph with spec_* tools, a live TODO plan shown above the editor, and the writing-specs / brainstorming / shipping-a-pr workflow skills.",
+	"type": "module",
+	"license": "Apache-2.0",
+	"keywords": ["pi-package", "pi", "pi-coding-agent", "extension", "skills", "specs", "todos"],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/franndeli/pi-workflow-kit.git"
+	},
+	"files": ["todos", "spec-graph", "workflow", "skills", "README.md", "LICENSE"],
+	"dependencies": {
+		"yaml": "2.9.1"
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"typebox": "*"
+	},
+	"pi": {
+		"extensions": ["./todos/index.ts", "./spec-graph/index.ts", "./workflow/index.ts"],
+		"skills": ["./skills"]
+	}
+}
