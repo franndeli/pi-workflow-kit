@@ -1,10 +1,12 @@
 # pi-workflow-kit
 
-[![npm version](https://img.shields.io/npm/v/pi-workflow-kit.svg)](https://www.npmjs.com/package/pi-workflow-kit)
+[![npm version](https://img.shields.io/npm/v/pi-workflow-kit?logo=npm)](https://www.npmjs.com/package/pi-workflow-kit)
+[![npm downloads](https://img.shields.io/npm/dm/pi-workflow-kit)](https://www.npmjs.com/package/pi-workflow-kit)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![Pi package](https://img.shields.io/badge/pi-package-8A2BE2)](https://pi.dev/packages/pi-workflow-kit)
 [![GitHub release](https://img.shields.io/github/v/release/franndeli/pi-workflow-kit)](https://github.com/franndeli/pi-workflow-kit/releases)
 
-Spec-driven workflow for the [pi](https://pi.dev) coding agent: a **spec graph** with `spec_*` tools, a **live TODO plan** shown above the editor, and a set of **workflow skills** (brainstorming, writing specs, shipping a PR, …). Extracted from [ThinkRail](https://github.com/franndeli/thinkrail) so it runs in plain pi — for example inside Orca terminals.
+Spec-driven workflow for the [pi](https://pi.dev) coding agent: a **spec graph** with `spec_*` tools, a **live TODO plan** shown above the editor, and a set of **workflow skills** (brainstorming, writing specs, shipping a PR, …). Extracted from ThinkRail so it runs in plain pi — for example inside Orca terminals.
 
 ## Install
 
@@ -90,4 +92,4 @@ Issues and pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-[Apache-2.0](LICENSE). Originally part of [ThinkRail](https://github.com/franndeli/thinkrail).
+[Apache-2.0](LICENSE). Originally part of ThinkRail.
