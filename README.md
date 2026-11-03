@@ -48,7 +48,9 @@ status: active
 
 `todo_write`, `todo_add`, `todo_update`, `todo_promote`, `todo_remove`, `todo_list` and `todo_plan_summary`. The agent keeps a grouped plan for the chat and the TUI shows it above the editor with live progress.
 
-- `/todos` hides or shows the widget.
+- The widget starts collapsed to one line: progress plus the step in work.
+- `Ctrl+Space` (or `Option+T` where Option sends Meta) expands it inline, up to 10 lines around the step in work, and collapses it again.
+- `/todos` opens the whole plan in a scrollable panel: arrow keys or `j`/`k` move, `PgUp`/`PgDn` page, `Enter` folds a group or shows a step's note, summary and verification, `Esc` closes.
 - Plans are stored per session in `~/.pi/agent/todos/`.
 
 ### Workflow skills

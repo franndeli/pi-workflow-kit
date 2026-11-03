@@ -4,6 +4,11 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Changed
+
+- The TODO widget starts collapsed to one line. `Ctrl+Space` (or `Option+T`) expands it inline around the step in work.
+- `/todos` opens a scrollable panel with the whole plan, foldable groups, and step details, instead of hiding the widget.
+
 ## [0.1.1]
 
 ### Added
