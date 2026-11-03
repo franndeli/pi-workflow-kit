@@ -4,6 +4,8 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [0.2.0]
+
 ### Changed
 
 - The TODO widget starts collapsed to one line. `Ctrl+Space` (or `Option+T`) expands it inline around the step in work.
