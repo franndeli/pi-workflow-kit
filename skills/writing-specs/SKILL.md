@@ -29,10 +29,11 @@ and is where the family's rules for specs and the spec graph accrue.
 ## On-rails
 
 - High-signal enough that a future agent (or human) lands on the decisions without re-deriving them.
-- The spec is the *only* home for rationale: decisions, invariants, trade-offs, and bug post-mortems
-  are recorded here, never as code comments — a rationale paragraph found in code is content to
-  promote into the owning spec, leaving at most a one-line pointer where misediting would silently
-  break something.
+- Record only what the user would decide: requirements (with `REQ-` ids and an example), invariants,
+  and decisions between modules, with their *why*. Implementation rationale, library quirks, and bug
+  post-mortems do not belong in a spec: they become a test name, a clearer function, or nothing.
+  Code carries no comments, so a rationale found in code is promoted only when it is a product
+  decision; otherwise it is deleted.
 - Say each thing once: link by `id` instead of restating; the dependency edges *between* sibling
   modules live in the parent's spec, not in each leaf.
 - One spec per *genuine* boundary — not per directory, not per file.

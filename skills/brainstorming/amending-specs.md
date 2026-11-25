@@ -3,7 +3,8 @@
 Entry: the accepted change is built and verified (spine step 8). Saves: the durable spec graph.
 Ends: the workflow.
 
-The specs stay the ground truth only if every change lands in them. This is your job, not a round
+The specs stay true only if every change to a requirement, boundary, or decision lands in them —
+and only those: most changes need no spec edit. This is your job, not a round
 of approvals: do it yourself, and let the user see the result in the Changes review. Read the
 **writing-specs** concept skill first — its bar holds for every edit here.
 
@@ -12,7 +13,8 @@ of approvals: do it yourself, and let the user see the result in the Changes rev
    - `architecture.md`, when topology, a cross-module decision, or a repo-wide invariant moved;
    - the owning module or submodule `SPEC.md`, for a responsibility, boundary, contract, decision,
      or known limitation — and a new spec for a genuinely new module;
-   - for a bug classified silent or wrong, the spec that should have stated the intended behavior.
+   - for a bug classified silent or wrong, the `REQ-` requirement that should have stated the intended
+     behavior (add or sharpen it, and name its id in the regression test) — never a post-mortem.
 2. **Amend top-down** — goal → architecture → modules — without asking the user to approve the list
    or the edits. `spec_create` for a new spec, `spec_update` for frontmatter, `edit` for prose. Write
    the decisions and the *why* the code cannot show, once, in the spec that owns them; link the rest

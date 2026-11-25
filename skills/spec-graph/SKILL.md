@@ -5,10 +5,14 @@ description: "Use when locating, reading, creating, updating, or validating proj
 
 # Spec graph
 
-## Specs are the ground truth
+## Specs record intent; only ID'd requirements bind
 
 - Specs describe the architecture, decisions, contracts, and boundaries behind the code — the intent
-  that the code alone does not reveal. Treat them as authoritative.
+  that the code alone does not reveal.
+- **Only requirements with an ID (`**REQ-012**`) are binding.** Breaking one is a bug; changing one
+  needs the user's decision. All other prose describes the current state: when a change makes a
+  sentence false, fix or delete the sentence — never keep code a certain way just because a paragraph
+  says so, and never promote an implementation detail into a requirement.
 - **Consult the owning spec when it governs the work.** When work depends on, checks, explains, or
   may alter a documented boundary, contract, invariant, behavior, or architecture decision, use
   `spec_grep` / `spec_get` / `spec_graph` to find the applicable record and align with it. If a change contradicts a recorded
@@ -17,7 +21,7 @@ description: "Use when locating, reading, creating, updating, or validating proj
   implementation. A localized fix, explanation, or check that changes no documented decision may
   inspect only the files it needs without reading unrelated specs.
 - **Keep them honest.** A change that moves or blurs a boundary, or overturns a decision, updates the
-  spec as part of the same change. Specs that drift from the code stop being ground truth.
+  spec as part of the same change. Most changes alter no decision and touch no spec.
 
 ## What a spec is
 
